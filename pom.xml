@@ -12,7 +12,17 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <slf4j-version>1.7.12</slf4j-version>
   </properties>
+  <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>dev</id>
+      <name>Local repository</name>
+      <url>file://${user.home}/.m2/repository</url>
+      <layout>default</layout>
+    </repository>
+  </distributionManagement>
 
   <dependencies>
     <dependency>
